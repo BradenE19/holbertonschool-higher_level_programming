@@ -3,11 +3,12 @@
 # Usage: ./1-filter_states.py <mysql username> \
 #                             <mysql password> \
 #                             <database name>
-""" """
+""" Module Documentation """
 import sys
 import MySQLdb
 
 if __name__ == "__main__":
+    """ Module doc """
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     c = db.cursor()
     c.execute("SELECT * FROM `states` ORDER BY `id`")
