@@ -2,6 +2,6 @@
 const request = require('request');
 const argv = process.argv;
 
-request(argv[2], function (response) {
-  console.log('statusCode:', response && response.statusCode);
+request(argv[2], function (error, response, body) {
+  console.log('code:', response && response.statusCode);
 });
