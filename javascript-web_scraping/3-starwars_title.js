@@ -7,5 +7,5 @@ request(url + argv, function (error, response, body) {
   if (error) {
     console.error(error);
   }
-  console.log(JSON.count.films);
+  console.log(JSON.parse(body).title);
 });
